@@ -142,6 +142,17 @@ class Multiselect extends Field
     }
 
     /**
+     * Sets the limit of selected options shown in the input field.
+     *
+     * @param int $limit
+     * @return \OptimistDigital\MultiselectField\Multiselect
+     **/
+    public function limit($limit)
+    {
+        return $this->withMeta(['limit' => $limit]);
+    }
+
+    /**
      * Sets the placeholder value displayed on the field.
      *
      * @param string $placeholder

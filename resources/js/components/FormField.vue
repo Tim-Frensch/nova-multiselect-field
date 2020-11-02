@@ -21,6 +21,7 @@
           :placeholder="field.placeholder || field.name"
           :close-on-select="field.max === 1 || !isMultiselect"
           :multiple="isMultiselect"
+          :limit="field.limit || 5"
           :max="max || field.max || null"
           :optionsLimit="field.optionsLimit || 1000"
           :limitText="count => __('novaMultiselect.limitText', { count: String(count || '') })"

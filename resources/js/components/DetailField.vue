@@ -24,7 +24,7 @@ export default {
       return valuesArray
         .map(this.getValueFromOptions)
         .filter(Boolean)
-        .map(val => `${this.isOptionGroups ? `[${val.group}] ` : ''}${val.label}`);
+        .map(val => `${val.label}`);
     },
 
     value() {

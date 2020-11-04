@@ -124,12 +124,10 @@ __webpack_require__.r(__webpack_exports__);
   props: ['resource', 'resourceName', 'resourceId', 'field'],
   computed: {
     values: function values() {
-      var _this = this;
-
       var valuesArray = this.getInitialFieldValuesArray();
       if (!valuesArray || !valuesArray.length) return;
       return valuesArray.map(this.getValueFromOptions).filter(Boolean).map(function (val) {
-        return "".concat(_this.isOptionGroups ? "[".concat(val.group, "] ") : '').concat(val.label);
+        return "".concat(val.label);
       });
     },
     value: function value() {
